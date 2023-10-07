@@ -3,6 +3,7 @@ layout: project.njk
 title: The Horror Revue
 description: Horror Review blog built using 11ty static site generator, NetlifyCMS, Netlify hosting, and GitHub for the repository.
 projectURL: https://horrorrevue.netlify.app
+githubURL: https://github.com/charitygamble/horror
 image: "/assets/horrorrevue.webp"
 ---
 
