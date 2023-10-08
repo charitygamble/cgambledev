@@ -14,6 +14,6 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "_includes/post.njk"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Date", name: "date", widget: "date", format: 'MM-DD-YYYY'}
+      - {label: "Date", name: "date", widget: "datetime", default: "", date_format: "MM-DD-YYYY"}
       - {label: "Post Body", name: "body", widget: "markdown"}
 
