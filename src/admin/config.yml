@@ -1,19 +1,19 @@
-backend: git
+backend:
   name: git-gateway
-  branch: master # branch to update (optional; defaults to master)
+  branch: master # Branch to update
 publish_mode: editorial_workflow
-media_folder: "src/images/uploads" #Media files will be stored in the repo under images/uploads
-public_folder: "images/uploads"
+media_folder: "src/assets"
+public_folder: "public/assets"
 collections:
-- name: "blog"
-  label: "Blog"
-  folder: "blog"
-  create: true
-  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-  fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "_includes/blog.njk"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "string"}
-    - {label: "Date", name: "date", widget: "date", default: ""}
-    - {label: "Post Body", name: "body", widget: "markdown"}
+ - name: "blog"        #The name of the collection and should match our posts.json file's tag
+   label: "Blog"       #The name of the collection on the CMS itself
+   folder: "blog"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "_includes/post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", default: ""}
+      - {label: "Post Body", name: "body", widget: "markdown"}
 
