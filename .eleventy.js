@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/_includes');
     eleventyConfig.addPassthroughCopy('src/css');
     eleventyConfig.addPassthroughCopy('src/assets');
+    eleventyConfig.addCollection('blog', (collection) => {
+      return collection.getFilteredByGlob('src/blog/*.md');
+    });
     eleventyConfig.addCollection('projects', (collection) => {
         return collection.getFilteredByGlob('src/projects/*.md');
     });
