@@ -3,7 +3,7 @@ layout: project.njk
 title: amy kaybach
 description: "A WordPress website to allow indie author amy kaybach to market and sell her rockstar romance novels. Website also includes a blog."
 projectURL: "https://amykaybach.com"
-image: "/assets/amykaybach.webp"
+image: "/assets/amykaybach2.webp"
 ---
 
 The website for amy kaybach was requested by amy to be created using WordPress. She had a specific theme in mind to be used on the blog, so the mainthing I did was set up the blog, install necessary themes and plugins, and customize the theme to amy's specifications. I also maintain the site for her, adding new products to her  web store when she releases new books.
