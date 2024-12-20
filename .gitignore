@@ -3,3 +3,6 @@ node_modules
 
 #run
 /public
+
+#folder
+/ignore
